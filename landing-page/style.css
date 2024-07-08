@@ -1,5 +1,8 @@
 body{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
 }
 
 .header,.footer,.hero{
@@ -23,6 +26,9 @@ ul{
     list-style: none;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;;
 }
 
 .quote{
@@ -42,6 +48,8 @@ ul{
 .hero-title{
     font-size: 48px;
     font-weight: bolder;
+    padding: 0px;
+    margin: 0px;
 }
 
 .logo{
@@ -60,3 +68,99 @@ ul{
 button,.newsletter{
     background-color: #3882F6;
 }
+
+button{
+    border-radius: 5px;
+    padding: 5px 30px;
+}
+
+.header{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 10px 100px;
+    margin: 0px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 200px;
+    gap: 40px;
+    align-items: center;
+}
+
+.hero-texts{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.info-contents{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    gap: 30px;
+}
+
+.info-content-1,.info-content-2,.info-content-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.quote{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 200px;
+}
+
+.quote-author{
+    align-self: flex-end;
+}
+
+.newsletter{
+    display: flex;
+    margin: 80px 200px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+
+.newsletter-texts{
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter-title{
+    margin-bottom: auto;
+}
+
+.newsletter-text{
+    margin-top:auto;
+}
+
+.footer{
+    text-align: center;
+    padding: 40px;
+}
+
+
+
